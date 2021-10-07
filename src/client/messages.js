@@ -34,6 +34,7 @@ const messages = msg => {
         msg.reply(`primeiro 1️⃣  escolha um ativo ✅  por exemplo 💡 , euro dolar 💶  decida 🤔 se o preço💸  ficará mais alto 📈 ou mais baixo 📉 no que está agora. Eu acho 🧐  que o preço  💰ficará mais alto ↗️ , ótimo 😁 , está subindo, opa 😮 , consegui! 💯 dólares 💵 em apenas 🤑 1 minuto ⏱`);
     }
 
+
     if (msg.content === '!tapa') {
         msg.reply(`Um :point_up: tapa :raised_hand: na :point_right: gostosa :hot_face:
 
@@ -42,8 +43,14 @@ const messages = msg => {
         :flag_um: Thank :raised_hands: you :raised_hand:`)
     }
 
+    if(msg.content === '!triste'){
+        msg.reply(`quem tá triste 😭 não tá mais 😆 quem tá triste 😭 não tá mais 😁 esquece a tristeza 🧐 se ela te abandonou 💃 se perdeu o emprego 
+
+        💼 vc vai conquistar td de novo ✅ o mundo é gigante 🌍 é o planeta inteiro 🪐 fio vamo vamo o importante é não parar o importante é não parar 🏃‍♂️🏃‍♂️`)
+    }
+
     if (msg.content === '!comandos') {
-        msg.reply(`!gamboa !angolano !tapa`);
+        msg.reply(`!gamboa !angolano !tapa !triste`);
     }
 
     
