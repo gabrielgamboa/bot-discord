@@ -1,13 +1,4 @@
-const Discord = require('discord.js');
-
-const client = new Discord.Client();
-
-client.login("Nzg5NDgyODUzMzg5OTU5MTg4.X9ytNA.NP7lQQWMGO-09cl9UIzKzkXruKk"); //token do bot
-client.once('ready', () => console.log(`Bot online: ${client.user.tag}`));
-
-
-//mensagens no geral
-client.on('message', msg => {
+const messages = msg => {
     if (msg.content === 'O carlos é gay?') {
         msg.reply("Sim, ele é.");
     }
@@ -52,16 +43,6 @@ client.on('message', msg => {
     }
 
     
-})
+}
 
-
-connection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { quality: 'highestaudio' }));
-
-client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.find(ch => ch.name === 'boas-vindas')
-
-    if (!channel) return;
-
-    channel.send(`Boas vindas ao nosso servidor, ${member}!. Fique atento às regras. ;)`);
-})
-
+module.exports = { messages };
