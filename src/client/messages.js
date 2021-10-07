@@ -42,6 +42,10 @@ const messages = msg => {
         :flag_um: Thank :raised_hands: you :raised_hand:`)
     }
 
+    if (msg.content === '!comandos') {
+        msg.reply(`!gamboa !angolano !tapa`);
+    }
+
     
 }
 
