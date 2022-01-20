@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 const members = member => {
-    const channel = member.guild.channels.cache.find(ch => ch.name === 'boas-vindas')
+    const channel = member.guild.channels.cache.find(ch => ch.name === 'geral')
 
     if (!channel) return;
 
